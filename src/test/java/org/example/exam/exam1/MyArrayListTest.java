@@ -32,10 +32,11 @@ public class MyArrayListTest {
     void t3() {
         MyArrayList<String> list = new MyArrayList<>();
 
-        list.add("사과");
-        list.add("포도");
+        list.add("사과"); // data[0];
+        list.add("포도"); // data[1];
 
-        assertThat(list.get(1)).isEqualTo("포도");
+        assertThat(list.get(0)).isEqualTo("사과"); // data[0];
+        assertThat(list.get(1)).isEqualTo("포도"); // data[1];
     }
 
 //    private MyArrayList<String> list;
