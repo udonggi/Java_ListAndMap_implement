@@ -27,6 +27,17 @@ public class MyArrayListTest {
 
     }
 
+    @Test
+    @DisplayName("get(1)")
+    void t3() {
+        MyArrayList<String> list = new MyArrayList<>();
+
+        list.add("사과");
+        list.add("포도");
+
+        assertThat(list.get(1)).isEqualTo("포도");
+    }
+
 //    private MyArrayList<String> list;
 
 
